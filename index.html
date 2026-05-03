@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ✏️ CHANGE THIS: Replace with your project title (shows in browser tab) -->
-  <title>My Data Capstone Project</title>
+  <title>Cricket World Cup Century Analysis</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -145,36 +144,6 @@
       margin-bottom: 2rem;
     }
 
-    /* ===== STAT BOXES (shows key numbers at a glance) ===== */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 1rem;
-      margin: 2rem 0;
-    }
-
-    .stat-box {
-      background: var(--accent-light);
-      border-radius: 10px;
-      padding: 1.25rem 1.5rem;
-      text-align: center;
-    }
-
-    .stat-number {
-      font-family: 'DM Serif Display', serif;
-      font-size: 2rem;
-      color: var(--accent);
-      display: block;
-    }
-
-    .stat-label {
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
     /* ===== FINDING CARDS (key takeaways) ===== */
     .findings-grid {
       display: grid;
@@ -203,14 +172,6 @@
       color: var(--muted);
     }
 
-    /* ===== FEATURED IMAGE ===== */
-    .featured-image {
-      width: 100%;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      margin: 1.5rem 0;
-    }
-
     /* ===== FOOTER ===== */
     footer {
       text-align: center;
@@ -224,10 +185,8 @@
 </head>
 <body>
 
-  <!-- ===== NAVIGATION BAR ===== -->
   <nav>
-    <!-- ✏️ CHANGE THIS: Replace with a short version of your project name -->
-    <a class="nav-brand" href="index.html">Capstone Project</a>
+    <a class="nav-brand" href="index.html">Cricket Analysis</a>
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="graphs.html">Graphs</a>
@@ -236,76 +195,61 @@
     </div>
   </nav>
 
-  <!-- ===== HERO SECTION ===== -->
   <div class="hero">
-    <!-- ✏️ CHANGE THIS: Your class or subject name -->
-    <span class="hero-tag">Data4Change Final Project</span>
+    <span class="hero-tag">Data4Change Capstone Project</span>
 
-    <!-- ✏️ CHANGE THIS: Your full project title -->
-    <h1>Correlation Between Screen Time and Academic Performance</h1>
+    <h1>The Evolution of Centuries in World Cup History</h1>
 
-    <!-- ✏️ CHANGE THIS: One or two sentences summarizing what your project is about -->
     <p>
-      An analysis of how daily phone usage affects GPA among high school students,
-      using survey data from 500 participants across 3 schools.
+      An in-depth analysis of batting performance across 40+ years of Cricket World Cups, 
+      exploring player statistics, boundary contributions, and venue trends.
     </p>
 
     <a class="hero-btn" href="graphs.html">View Graphs →</a>
   </div>
 
-  <!-- ===== MAIN CONTENT ===== -->
   <div class="container">
     
-    <!-- PROBLEM STATEMENT -->
     <div class="card">
-      <h2 class="section-heading">Problem Statement</h2>
-      <!-- ✏️ CHANGE THIS: Explain the question/problem your project tries to answer -->
+      <h2 class="section-heading">Project Overview</h2>
       <p>
-        With smartphones becoming central to teen life, many educators and parents
-        worry that excessive screen time is hurting academic outcomes. But is there
-        real data to support this? This project investigates whether there is a
-        measurable correlation between daily phone screen time and GPA among high
-        school students.
+        The Cricket World Cup is the pinnacle of the sport, and scoring a century (100 runs) 
+        is the ultimate benchmark for a batsman. This project investigates the historical 
+        trends of century-makers since the tournament's inception in 1975. By analyzing 
+        strike rates, boundary data, and venue distribution, we can see how the game 
+        has evolved from a defensive contest into a high-scoring spectacle.
       </p>
     </div>
 
-    <!-- QUESTIONS -->
     <h2 class="section-heading">Research Questions</h2>
     <div class="findings-grid">
-      <!-- ✏️ CHANGE THESE: Replace with your own 3 findings -->
       <div class="finding-card">
-        <h3>Question 1</h3>
-        <p>Does a person's education level influence whether they earn above $50K per year?</p>
+        <h3>Most Centuries</h3>
+        <p>Which players have scored the most centuries in World Cup history and what are their overall strike rates?</p>
       </div>
       <div class="finding-card">
-        <h3>Question 2</h3>
-        <p>Is there a correlation between age and income level across different occupations?</p>
+        <h3>Boundary Impact</h3>
+        <p>How much do boundaries (4s and 6s) contribute to a century, and how does this vary by player or team?</p>
       </div>
       <div class="finding-card">
-        <h3>Question 3</h3>
-        <p>Do demographic factors such as gender and race play a measurable role in income distribution?</p>
+        <h3>Venue & Time</h3>
+        <p>What is the distribution of centuries across different global venues and how has the frequency changed over time?</p>
       </div>
     </div>
 
-    <!-- CONCLUSION -->
     <div class="card" style="margin-top: 2rem;">
       <h2 class="section-heading">Conclusion</h2>
-      <!-- ✏️ CHANGE THIS: Write your conclusion — what did your analysis show? -->
       <p>
-        The data supports a moderate negative correlation between recreational screen
-        time and academic performance. However, correlation does not equal causation —
-        other factors like study habits, sleep, and socioeconomic background likely
-        play a role. Future research should use longitudinal data to establish
-        stronger causal claims.
+        The analysis reveals that the frequency and speed of centuries have increased dramatically over time. 
+        Modern players rely more heavily on boundaries (4s and 6s) compared to early World Cup eras. 
+        Geographically, specific venues like Edgbaston and Lord's stand out as high-scoring hubs, 
+        suggesting that pitch conditions and stadium dimensions significantly impact batting success 
+        on the world stage.
       </p>
     </div>
 
-  </div><!-- end .container -->
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <!-- ✏️ CHANGE THIS: Your name, class, and year -->
-    Created by Jane Smith · Data4Change · 2026
+  </div><footer>
+    Created for the Data4Change Capstone Project · 2026
   </footer>
 
 </body>
