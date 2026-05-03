@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ✏️ CHANGE THIS: Update the project title -->
-  <title>About</title>
+  <title>About · Cricket World Cup Analysis</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -109,7 +108,6 @@
       margin-bottom: 2rem;
     }
 
-    /* The circle avatar / initials icon */
     .avatar {
       min-width: 80px;
       height: 80px;
@@ -142,7 +140,6 @@
       color: var(--muted);
     }
 
-    /* Responsive: stack on small screens */
     @media (max-width: 520px) {
       .profile-card { flex-direction: column; }
     }
@@ -175,41 +172,6 @@
       font-size: 1rem;
       font-weight: 500;
       color: var(--text);
-    }
-
-    /* ===== PROCESS / STEPS SECTION ===== */
-    .process-step {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-      align-items: flex-start;
-    }
-
-    .step-dot {
-      min-width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: var(--accent-light);
-      border: 2px solid var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--accent);
-      flex-shrink: 0;
-      margin-top: 0.2rem;
-    }
-
-    .step-text h3 {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-    }
-
-    .step-text p {
-      font-size: 0.9rem;
-      color: var(--muted);
     }
 
     /* ===== SECTION HEADING ===== */
@@ -245,47 +207,37 @@
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
   <nav>
-    <!-- ✏️ CHANGE: Short project name -->
-    <a class="nav-brand" href="index.html">Capstone Project</a>
+    <a class="nav-brand" href="index.html">Cricket World Cup Analysis</a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="graphs.html">Graphs</a>
       <a href="sources.html">Sources</a>
-      <a href="about.html" class="active">About</a>  <!-- active = current page -->
+      <a href="about.html" class="active">About</a>
     </div>
   </nav>
 
-  <!-- ===== PAGE HEADER ===== -->
   <div class="page-header">
     <h1>About This Project</h1>
-    <p>Who made it, why it was made, and acknowledgements.</p>
+    <p>Behind the data: The creator and the motivation for this analysis.</p>
   </div>
 
   <div class="container">
 
-    <!-- ─── STUDENT PROFILE ─── -->
     <div class="profile-card">
-      <!-- ✏️ CHANGE: Replace "JS" with your actual initials -->
-      <div class="avatar">JS</div>
+      <div class="avatar">SS</div>
       <div class="profile-info">
-        <!-- ✏️ CHANGE: Your full name -->
-        <h2>Jane Smith</h2>
-        <!-- ✏️ CHANGE: Your grade -->
-        <div class="role">11th Grade · Data4Change</div>
-        <!-- ✏️ CHANGE: Write 2–3 sentences about yourself (optional but nice!) -->
+        <h2>Shrey Shah</h2>
+        <div class="role">9th Grade · Data4Change</div>
         <p>
-          I'm a junior interested in data science and public health. I created this
-          project as part of the Data4Change course, exploring how technology
-          habits relate to academic performance among students my age.
+          I'm a freshman interested in data science and cricket. I created this
+          project as part of the Data4Change course, exploring how cricket centuries 
+          have evolved over the history of the World Cup tournament.
         </p>
       </div>
     </div>
 
-    <!-- ─── PROJECT INFO GRID ─── -->
     <div class="info-grid">
-      <!-- ✏️ CHANGE: Fill in the actual details for each box -->
       <div class="info-card">
         <div class="label">Course</div>
         <div class="value">Data4Change</div>
@@ -296,36 +248,30 @@
       </div>
       <div class="info-card">
         <div class="label">Date Completed</div>
-        <!-- ✏️ CHANGE: When you finished the project -->
         <div class="value">May 3, 2026</div>
       </div>
     </div>
 
-<!-- ─── WHY ─── -->
-    <h2 class="section-heading" style="margin-top: 2.5rem;">Why Did You Choose This Project</h2>
+    <h2 class="section-heading" style="margin-top: 2.5rem;">Why Did You Choose This Project?</h2>
     <div class="reflection">
-      I chose this project because income inequality is something that affects millions of
-      people yet is often misunderstood. I wanted to explore what factors — like education,
-      age, and occupation — actually influence whether someone earns above or below a certain
-      threshold. Data felt like the best way to cut through assumptions and look at the
-      patterns objectively. This topic also felt personally relevant, as conversations about
-      economic opportunity come up a lot in my community, and I wanted to back those
-      conversations with real numbers.
+      I chose this project because cricket is a sport defined by numbers, yet the shift 
+      in how centuries are scored across eras is something often discussed but rarely 
+      visualized with raw data. I wanted to see how factors like playing 
+      at specific venues and the reliance on boundaries have changed since the first 
+      World Cup in 1975. Using Python to clean and analyze this data allowed me to see 
+      patterns in player strike rates and scoring distributions that aren't obvious 
+      from a simple scorecard. This project allowed me to combine my passion for the 
+      sport with my interest in learning data science tools like Pandas and Matplotlib.
     </div>
 
-    <!-- ─── ACKNOWLEDGEMENTS (optional) ─── -->
     <h2 class="section-heading">Acknowledgements</h2>
     <p style="color: var(--muted); font-size: 0.92rem; line-height: 2;">
-      Thank you to <a href="https://www.code4change.co/" target="_blank">Code4Change</a> and the entire 
-      team for the guidance and support throughout this project.
+      Thank you to <a href="https://www.code4change.co/" target="_blank">Code4Change</a> and my instructor, 
+      Tulika Punia, for the guidance and support throughout this technical journey.
     </p>
 
-  </div><!-- end .container -->
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <!-- ✏️ CHANGE: Your name, class, school, year -->
-    Created by Jane Smith · Data4Change · 2026
+  </div><footer>
+    Created by Shrey Shah · Data4Change · 2026
   </footer>
 
 </body>
