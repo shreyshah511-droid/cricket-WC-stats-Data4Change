@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sources · My Data Capstone Project</title>
+  <title>Sources · Cricket World Cup Analysis</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -166,7 +166,7 @@
 <body>
 
   <nav>
-    <a class="nav-brand" href="index.html">Capstone Project</a>
+    <a class="nav-brand" href="index.html">Cricket Analysis</a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="graphs.html">Graphs</a>
@@ -176,7 +176,8 @@
   </nav>
 
   <div class="page-header">
-    <h1>Source</h1>
+    <h1>Project Sources</h1>
+    <p>Details about the dataset and information used for this analysis.</p>
   </div>
 
   <div class="container">
@@ -187,18 +188,38 @@
       <div class="source-icon">📁</div>
       <div class="source-content">
         <div class="source-type">Primary Dataset</div>
-        <h3>Income Dataset</h3>
-        <p>The dataset used in this project is the 'Income Dataset' from Kaggle. It can be accessed at:</p>
-        <a href="https://www.kaggle.com/datasets/mastmustu/income" target="_blank">
-          https://www.kaggle.com/datasets/mastmustu/income →
+        <h3>All Cricket World Cup Centuries</h3>
+        <p>This dataset contains a comprehensive list of every century scored in the ICC Cricket World Cup from 1975 to 2019, including player names, runs, balls faced, and boundary counts.</p>
+        <a href="https://www.kaggle.com/datasets/drahulsingh/all-cricket-world-cup-centuries" target="_blank">
+          https://www.kaggle.com/datasets/drahulsingh/all-cricket-world-cup-centuries →
         </a>
+      </div>
+    </div>
+
+    <h2 class="section-heading">🛠️ Tools Used</h2>
+
+    <div class="source-card">
+      <div class="source-icon">🐍</div>
+      <div class="source-content">
+        <div class="source-type">Data Processing</div>
+        <h3>Python & Pandas</h3>
+        <p>Python was used for data cleaning and aggregation, specifically utilizing the Pandas library to handle CSV parsing and statistical calculations.</p>
+      </div>
+    </div>
+
+    <div class="source-card">
+      <div class="source-icon">📈</div>
+      <div class="source-content">
+        <div class="source-type">Visualization</div>
+        <h3>Matplotlib & Seaborn</h3>
+        <p>Data visualizations were generated using Seaborn and Matplotlib to identify trends across time and venues.</p>
       </div>
     </div>
 
   </div>
 
   <footer>
-    Created by Jane Smith · Data4Change · 2026
+    Created for the Data4Change Capstone Project · 2026
   </footer>
 
 </body>
